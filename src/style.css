@@ -53,15 +53,17 @@ header a {
   text-align: center;
   border-radius: 5px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 65px;
+}
 
 section {
   max-width: 1200px;
   margin: 0 auto;
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../photos/Tatsumi-Bridge.jpg");
