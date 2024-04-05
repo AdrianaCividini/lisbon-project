@@ -11,22 +11,24 @@ body {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
     url("../photos/kyoto.jpeg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
   text-align: center;
   padding: 200px 0;
-  margin: 0;
 }
 main {
   background-color: white;
 }
+
 .img-responsive {
   max-width: 70%;
+  display: block;
 }
+
 main h2 {
   font-weight: 700px;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 5px;
   color: #272044;
@@ -41,6 +43,22 @@ main h3 {
   margin: 0;
   color: #272044;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
 main p {
   font-style: normal;
   font-weight: 400;
@@ -49,6 +67,7 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
+
 header h1 {
   font-weight: 700;
   font-size: 96px;
@@ -67,6 +86,7 @@ header h3 {
   font-weight: 900;
   font-size: 24px;
   line-height: 1.5;
+  letter-spacing: 5px;
   margin: 0;
 }
 
@@ -85,22 +105,55 @@ header a {
   border-radius: 5px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
-  grid-gap: 62px;
+  grid-gap: 64px;
 }
 .grid-2-columns {
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid-3-columns {
   grid-template-columns: 2fr 2fr 2fr;
 }
+.grid3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  margin-top: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  background-color: #462cb3;
+  text-transform: uppercase;
+  padding: 16px;
+  text-decoration: none;
+}
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 footer {
@@ -108,10 +161,13 @@ footer {
     url("../photos/Tatsumi-Bridge.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   color: aliceblue;
 }
-
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
 footer p {
   font-weight: 400px;
   font-size: 16px;
@@ -125,11 +181,13 @@ footer li {
   list-style: none;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 footer a {
   color: white;
   opacity: 0.7;
 }
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
