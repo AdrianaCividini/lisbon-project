@@ -1,6 +1,6 @@
 body {
   font-family: "Popins", sans-serif;
-  background-color: rgb(144, 192, 234);
+  background-color: rgb(226, 236, 245);
 }
 
 .container {
@@ -23,6 +23,7 @@ main {
 
 .img-responsive {
   width: 100%;
+  aspect-ratio: 1 / 1;
   display: block;
 }
 
@@ -215,5 +216,11 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
