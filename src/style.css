@@ -247,12 +247,6 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-  .grid-2-columns img {
-    display: none;
-  }
-  .grid-2-columns p {
-    font-size: 10px;
-  }
 
   section {
     padding: 30px;
@@ -262,5 +256,8 @@ footer a {
   }
   .embed {
     aspect-ratio: 16 / 9;
+  }
+  .gallery h3 {
+    font-size: 25px;
   }
 }
