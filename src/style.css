@@ -260,4 +260,11 @@ footer a {
   .gallery h3 {
     font-size: 25px;
   }
+
+  footer {
+    text-align: center;
+  }
+  .grid-3-columns {
+    margin: 0 auto;
+  }
 }
